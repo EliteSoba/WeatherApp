@@ -219,8 +219,8 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     public void loadMap(View view) {
-        //Intent intent = new Intent(this, MapActivity.class);
-       // startActivity(intent);
+        Intent intent = new Intent(this, MapActivity.class);
+        startActivity(intent);
 
     }
 

@@ -3,7 +3,7 @@
     package="com.soba.soba.sandbox">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- Aeris Library uses the network state to determine if network is availabe to make calls  -->
+    <!-- Aeris Library uses the network state to determine if network is availabe to make calls -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- Google maps requires this now with tiles -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,10 +20,9 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
-
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyATsFPee8Sp9RG_j3JhRdJpVDUq5L16oc8" />
+            android:value="AIzaSyCLw8S5MoHaZBdQzxZAV3AdkJGyJU3zzaM" />
 
         <activity
             android:name=".MyActivity"
@@ -82,6 +81,15 @@
             android:authorities="com.facebook.app.FacebookContentProvider1715119768722217"
             android:exported="true" />
 
+        <activity
+            android:name=".MapActivity"
+            android:label="@string/title_activity_map"
+            android:parentActivityName=".ResultActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.soba.soba.sandbox.ResultActivity" />
+        </activity>
     </application>
 
 </manifest>
