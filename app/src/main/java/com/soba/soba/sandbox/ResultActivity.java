@@ -43,6 +43,7 @@ public class ResultActivity extends AppCompatActivity {
     String desc;
     String icon;
     String cityState;
+    double lat, lon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +82,8 @@ public class ResultActivity extends AppCompatActivity {
 
         try {
             results = new JSONObject(json);
+            lat = results.getDouble("latitude");
+            lon = results.getDouble("longitude");
             JSONObject currently = results.getJSONObject("currently");
             JSONObject daily = results.getJSONObject("daily");
             JSONArray dailies = daily.getJSONArray("data");
@@ -220,6 +223,8 @@ public class ResultActivity extends AppCompatActivity {
 
     public void loadMap(View view) {
         Intent intent = new Intent(this, MapActivity.class);
+        intent.putExtra(MapActivity.lat, lat);
+        intent.putExtra(MapActivity.lon, lon);
         startActivity(intent);
 
     }

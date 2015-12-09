@@ -182,6 +182,8 @@ public class MyActivity extends AppCompatActivity {
             error.setText(message);
         }
         else {
+            TextView error = (TextView)findViewById(R.id.error);
+            error.setText("");
             String degree = "si";
             RadioButton f = (RadioButton)findViewById(R.id.fahrenheit);
             if (f.isChecked()) {
