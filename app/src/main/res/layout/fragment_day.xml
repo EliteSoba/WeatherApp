@@ -1,0 +1,848 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.soba.soba.sandbox.DayFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2"
+        android:background="#85ece6"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Time"
+            android:id="@+id/time_text"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Summary"
+            android:id="@+id/summary_text"
+            android:layout_weight="0.6"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Temp(°F)"
+            android:id="@+id/temp_text"
+            android:layout_weight=".2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3"
+        android:background="#cbcbcb">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="02:00 AM"
+            android:id="@+id/hour0"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon0"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="56"
+            android:id="@+id/temp0"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="03:00 AM"
+            android:id="@+id/hour1"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon1"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="56"
+            android:id="@+id/temp1"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="04:00 AM"
+            android:id="@+id/hour2"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon2"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp2"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="05:00 AM"
+            android:id="@+id/hour3"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon3"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp3"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="06:00 AM"
+            android:id="@+id/hour4"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon4"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp4"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout8"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="07:00 AM"
+            android:id="@+id/hour5"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon5"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp5"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout9"
+        android:background="#cbcbcb"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="08:00 AM"
+            android:id="@+id/hour6"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon6"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp6"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout10"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="09:00 AM"
+            android:id="@+id/hour7"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon7"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp7"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout11"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/linearLayout10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="10:00 AM"
+            android:id="@+id/hour8"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon8"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp8"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout12"
+        android:layout_below="@+id/linearLayout11"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="11:00 AM"
+            android:id="@+id/hour9"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon9"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp9"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout13"
+        android:background="#cbcbcb"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout12"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="12:00 PM"
+            android:id="@+id/hour10"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon10"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp10"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout14"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout13"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="01:00 PM"
+            android:id="@+id/hour11"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon11"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp11"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout15"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/linearLayout14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="02:00 PM"
+            android:id="@+id/hour12"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon12"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp12"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout16"
+        android:layout_below="@+id/linearLayout15"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="03:00 PM"
+            android:id="@+id/hour13"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon13"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp13"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout17"
+        android:background="#cbcbcb"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout16"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="04:00 PM"
+            android:id="@+id/hour14"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon14"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp14"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout18"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout17"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="05:00 PM"
+            android:id="@+id/hour15"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon15"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp15"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout19"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/linearLayout18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="06:00 PM"
+            android:id="@+id/hour16"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon16"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp16"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout20"
+        android:layout_below="@+id/linearLayout19"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="07:00 PM"
+            android:id="@+id/hour17"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon17"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp17"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout21"
+        android:background="#cbcbcb"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout20"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="08:00 PM"
+            android:id="@+id/hour18"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon18"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp18"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout22"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout21"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="09:00 PM"
+            android:id="@+id/hour19"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon19"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp19"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout23"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/linearLayout22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="10:00 PM"
+            android:id="@+id/hour20"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon20"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp20"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout24"
+        android:layout_below="@+id/linearLayout23"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="11:00 PM"
+            android:id="@+id/hour21"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon21"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp21"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout25"
+        android:background="#cbcbcb"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout24"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="12:00 AM"
+            android:id="@+id/hour22"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon22"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp22"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout26"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout25"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="01:00 AM"
+            android:id="@+id/hour23"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon23"
+            android:src = "@drawable/clear_day" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56"
+            android:id="@+id/temp23"
+            android:layout_weight=".2"
+            android:gravity="right"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+</RelativeLayout>
